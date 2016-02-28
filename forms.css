@@ -61,3 +61,20 @@ select{
     font-size: 0.9em;
     margin: 7px 0px;
 }
+
+/*Option button styles*/
+fieldset.optionGroup{
+    border-width: 0px;  /*Taking away the border*/
+}
+fieldset.optionGroup label{
+    display: inline;
+    float: none;    /*stop floating left in order to show labels side by side*/
+    margin: 0px 3px 0px 0px;                /*instead of on top of each other*/
+    width: 30px;
+}
+fieldset.optionGroup input{
+    display: inline;
+    float: none;
+    margin: 0px 20px 0px 0px;
+    width: 20px;
+}
