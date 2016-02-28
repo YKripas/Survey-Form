@@ -22,3 +22,11 @@ fieldset{
     width: 46%;
     
 }
+/*FIeld Set Legend Rules*/
+legend{
+    background-color: rgb(233,69,0);
+    color: white;
+    padding: 2px 0px;
+    text-indent: 5px;
+    width: 100%;
+}
