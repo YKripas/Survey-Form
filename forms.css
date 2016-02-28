@@ -40,3 +40,12 @@ label{
     margin: 7px 4% 7px 5px;
     width: 40%;
 }
+
+/*Input Control Styles*/
+input{
+    display: block;
+    float: left;
+    font-size: 0.9em;
+    margin: 7px 0px;
+    width: 50%;
+}
