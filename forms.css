@@ -49,3 +49,7 @@ input{
     margin: 7px 0px;
     width: 50%;
 }
+/*Reducing the State field input control*/
+input#state{
+    width: 50px;
+}
