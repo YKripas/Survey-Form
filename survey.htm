@@ -76,7 +76,7 @@
                <!--Adding input boxes for customer information-->
                
                <label for="custname">Name *</label>     <!--Labels associate the actual caption of the field with the actual field-->
-               <input name="custname" id="custname" value="Douche" placeholder="first and last name" />   <!--and once clicked on the caption the cursor gets activated inside the field-->
+               <input name="custname" id="custname"  placeholder="first and last name" />   <!--and once clicked on the caption the cursor gets activated inside the field-->
                
                <label for="street">Street Address</label> 
                <input name="street" id="street"/>
@@ -124,6 +124,15 @@
                         <option value="type3" selected="selected" >Dine in</option>  <!--Using 'selected' attribute to show 'Dine in' as default option-->
                         <option value="type4">Take and Bake</option>
                     </select>
+                    <!--Creating Radio/Option buttons-->
+                    <label>Was your service friendly?</label>
+                    <fieldset class="optionGroup">
+                        <label for="sYes">Yes</label>       <!--Yes Radio button-->
+                        <input type="radio" name="serviceFriendly" id="sYes" value="yes" />
+                        
+                        <label for="sNo">No</label>
+                        <input type="radio" name="serviceFriendly" id="sNo" value="no" />
+                    </fieldset>
                
            </fieldset>
            
