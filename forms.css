@@ -53,3 +53,11 @@ input{
 input#state{
     width: 50px;
 }
+
+/*Selection List styles*/
+select{
+    display: block;
+    float: left;
+    font-size: 0.9em;
+    margin: 7px 0px;
+}

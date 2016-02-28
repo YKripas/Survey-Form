@@ -106,6 +106,16 @@
                      
                     <label for="receipt">Receipt Number *</label>
                     <input name="receipt" id="receipt" placeholder="re-nnnnnn" />
+                    
+                    <!--Creating a selection list-->
+                    <label for="ordertype">Order type</label>
+                    <select name="ordertype" id="ordertype">
+                        <option value="type1">Carry out</option>
+                        <option value="type2">Delivery</option>
+                        <option value="type3" selected="selected" >Dine in</option>  <!--Using 'selected' attribute to show 'Dine in' as default option-->
+                        <option value="type4">Take and Bake</option>
+                    </select>
+               
            </fieldset>
            
        </form>
