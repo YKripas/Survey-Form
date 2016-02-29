@@ -119,3 +119,14 @@ label.sliderLabel {
 input[type="range"] {
     width: 150px;
 }
+
+/*Button Styles*/
+form p{
+    text-align: center;
+}
+input[type="submit"], input[type="reset"] {
+    display: inline;
+    float: none;
+    height: 40px;
+    width: 200px;
+}
