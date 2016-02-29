@@ -112,6 +112,8 @@
                <input name="ordersPerMonth" id="ordersPerMonth" type="number" value="1"
                       min="0" max="10" step="1" />
                
+               <!--Creating a Data List-->
+               
            </fieldset>
            
            <fieldset id="experience">
@@ -160,8 +162,25 @@
                     </fieldset>
                     
                     <!--Creating Text box-->
-                    <label for="comments">Tell us more about your experience!</label>
-                    <textarea name="comments" id="comments"></textarea>
+                        <label for="comments">Tell us more about your experience!</label>
+                        <textarea name="comments" id="comments"></textarea>
+               
+                        <label>Rate the overall service<br />
+                                (0 = poor; 10 = great)
+                        </label>
+               
+                        <label class="sliderLabel">0</label>    <!--adding 0 and 10 to the edges of slider-->
+                            
+                        <input name="service" id="service" type="range" value="5"
+                                min="0" max="10" step="1" />
+               
+                        <label class="sliderLabel">10</label>
+               
+                        <label>Rate the food quality<br />
+                                (0 = poor; 10 = great)
+                        </label>
+                        <input name="quality" id="quality" type="range" value="5"
+                                min="0" max="10" step="1" />
                
            </fieldset>
            
