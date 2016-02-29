@@ -130,3 +130,24 @@ input[type="submit"], input[type="reset"] {
     height: 40px;
     width: 200px;
 }
+
+/*Validation Styles*/
+input:focus, select:focus, textarea:focus{  /*highlights the elements green when clicked on*/
+    background-color: rgb(220,255,220);
+}
+input:focus:valid{
+    background:rgb(220,255,220) url(go.png) bottom right no-repeat;
+    
+    -o-background-size:contain;
+    -moz-background-size:contain;
+    -webkit-background-size:contain;
+    background-size:contain;
+}
+input:focus:invalid{
+    background:rgb(255,232,233) url(stop.png) bottom right no-repeat;
+    
+    -o-background-size:contain;
+    -moz-background-size:contain;
+    -webkit-background-size:contain;
+    background-size:contain;
+}
