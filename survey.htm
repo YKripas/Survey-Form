@@ -76,7 +76,8 @@
                <!--Adding input boxes for customer information-->
                
                <label for="custname">Name *</label>     <!--Labels associate the actual caption of the field with the actual field-->
-               <input name="custname" id="custname"  placeholder="first and last name" />   <!--and once clicked on the caption the cursor gets activated inside the field-->
+               <input name="custname" id="custname"  placeholder="first and last name"
+                    required="required"   />   <!--and once clicked on the caption the cursor gets activated inside the field, also adding the 'required' value-->
                
                <label for="street">Street Address</label> 
                <input name="street" id="street"/>
@@ -88,13 +89,13 @@
                <input name="state" id="state" value="FL" />
                
                 <label for="zip">Postal Code</label> 
-               <input name="zip" id="zip" placeholder="nnnnn (-nnnn)" />
+               <input name="zip" id="zip" placeholder="nnnnn (-nnnn)" pattern="^\d{5}(\-\d{4})?$" />
                
                <label for="phone">Phone Number</label> 
-               <input name="phone" id="phone" type="tel" />
+               <input name="phone" id="phone" type="tel" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
                
                <label for="email">E-Mail</label>
-               <input name="email" id="email" type="email" />
+               <input name="email" id="email" type="email" required="required" />
                
                <label>Where did you hear about us? <br />(select all that apply)</label>
                <select name="infoSrc" id="infoSrc" size="5" multiple="multiple">    <!--Setting the size of the selection list to 5 rows and allowing multiple selection-->
@@ -135,7 +136,7 @@
                     <input name="visitdate" id="visitdate" type="date" />
                      
                     <label for="receipt">Receipt Number *</label>
-                    <input name="receipt" id="receipt" placeholder="re-nnnnnn" />
+                    <input name="receipt" id="receipt" placeholder="re-nnnnnn" required="required" pattern="^re\-\d{6}$" />
                     
                     <!--Creating a selection list-->
                     <label for="ordertype">Order type</label>
