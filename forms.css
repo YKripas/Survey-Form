@@ -102,3 +102,8 @@ textarea{
     float: none;
     width: 20px;
 }
+
+/*Number input box styles*/
+#ordersPerMonth{
+    width: 70px;
+}

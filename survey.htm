@@ -91,10 +91,10 @@
                <input name="zip" id="zip" placeholder="nnnnn (-nnnn)" />
                
                <label for="phone">Phone Number</label> 
-               <input name="phone" id="phone"/>
+               <input name="phone" id="phone" type="tel" />
                
                <label for="email">E-Mail</label>
-               <input name="email" id="email"/>
+               <input name="email" id="email" type="email" />
                
                <label>Where did you hear about us? <br />(select all that apply)</label>
                <select name="infoSrc" id="infoSrc" size="5" multiple="multiple">    <!--Setting the size of the selection list to 5 rows and allowing multiple selection-->
@@ -105,13 +105,20 @@
                    <option value="other">Other</option>                              
                </select>
                
+               <!--creating a number data type-->
+               <label for="ordersPerMonth">
+                    How many times do you dine out per month?
+               </label>
+               <input name="ordersPerMonth" id="ordersPerMonth" type="number" value="1"
+                      min="0" max="10" step="1" />
+               
            </fieldset>
            
            <fieldset id="experience">
                <legend>Share Your Experience at Red Ball Pizza</legend>     <!--Adding descriptions of the fieldsets-->
                      
                     <label for="visitdate">Date of Visit</label>
-                    <input name="visitdate" id="visitdate"/>
+                    <input name="visitdate" id="visitdate" type="date" />
                      
                     <label for="receipt">Receipt Number *</label>
                     <input name="receipt" id="receipt" placeholder="re-nnnnnn" />
